@@ -58,6 +58,7 @@ backend/.env
 backend/.env.local
 backend/.env.production
 backend/.env.test
+backend/app/models/random_forest_model.pkl
 analysis/sa-ana/
 
 # ──────────────────────────────────────────

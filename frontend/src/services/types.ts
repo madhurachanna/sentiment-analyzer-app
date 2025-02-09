@@ -9,7 +9,7 @@ export interface PredictionResponse {
   p: {
     logistic: ModelPrediction;
     naive_bayes:  ModelPrediction;
-    random_forest:  ModelPrediction;
+    // random_forest:  ModelPrediction;
   };
   text: string;
 }
