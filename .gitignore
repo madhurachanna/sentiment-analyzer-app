@@ -40,7 +40,7 @@ frontend/yarn-error.log
 # Backend: Python (Flask / FastAPI / Django)
 # ──────────────────────────────────────────
 backend/.venv/
-backend/venv/
+backend/sa/
 backend/env/
 backend/__pycache__/
 backend/db.sqlite3
