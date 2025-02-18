@@ -26,6 +26,9 @@ app.add_middleware(
 class SentenceInput(BaseModel):
     text: str
 
+class Rating(BaseModel):
+    count: int
+
 
 @app.post("/predict/")
 def predict_sentiment(input_data: SentenceInput):
@@ -39,6 +42,11 @@ def predict_sentiment(input_data: SentenceInput):
         },
         "text": sentence
     }
+
+@app.post("/rating/")
+def save_rating(input_data: Rating):
+    print(input_data.count)
+    return
 
 
 if __name__ == "__main__":

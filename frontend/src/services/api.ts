@@ -1,4 +1,4 @@
-import { PredictionResponse, SentenceInput } from "./types";
+import { PredictionResponse, SentenceInput, Rating } from "./types";
 
 const BASE_URL = "http://127.0.0.1:8000";
 
@@ -6,6 +6,12 @@ export async function predictSentiment(
   input: SentenceInput,
 ): Promise<PredictionResponse> {
   return apiRequest<PredictionResponse>("/predict/", "POST", input );
+}
+
+export async function saveRating(
+  count: Rating,
+): Promise<PredictionResponse> {
+  return apiRequest<PredictionResponse>("/rating/", "POST", count);
 }
 
 async function apiRequest<T>(

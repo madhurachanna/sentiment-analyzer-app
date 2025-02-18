@@ -18,6 +18,10 @@ export interface SentenceInput {
   text: string;
 }
 
+export interface Rating {
+  count: number;
+}
+
 export interface InputProps {
   loading: boolean;
   handleSubmit: () => void;
