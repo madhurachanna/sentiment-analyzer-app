@@ -1,4 +1,8 @@
 # Sentiment Analysis Application
+<p align="center">
+  <img src="s1.png" width="45%" />
+  <img src="s2.png" width="45%" />
+</p>
 
 This project implements a **Sentiment Analysis** application with a **React** frontend, **FastAPI** backend, and a dedicated **analysis** section for exploring different machine learning models. The application allows users to input text, analyze its sentiment, and display the results.
 
